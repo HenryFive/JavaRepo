@@ -30,7 +30,7 @@ public class main
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("If else example:");
+        System.out.print("\nIf else example: \n");
         System.out.print("Enter an integer from 1 - 100: ");
         int number = input.nextInt();
 
@@ -46,6 +46,7 @@ public class main
         // closing the scanner object
 
         // switch case example
+        System.out.print("\nSwitch Case Example: \n");
         System.out.print("How many days is it since last Saturday: ");
         int days = input.nextInt();
         input.close();
@@ -74,6 +75,21 @@ public class main
                 System.out.println("Today must be Saturday");
                 break;
         }
+
+        System.out.print("\nFor loop example: \n");
+        for (int a = 0; a < 5; a++) {
+            System.out.println(a);
+        }
+
+
+        System.out.print("\nDo While example: \n");
+        int x = 10;
+
+        do {
+            System.out.print("value of x : " + x );
+            x++;
+            System.out.print("\n");
+        }while( x < 20 );
 
     }
 }
