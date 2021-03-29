@@ -91,5 +91,16 @@ public class main
             System.out.print("\n");
         }while( x < 20 );
 
+        double b = 4.5;
+        double c = 5.5;
+        double f;
+        f = b + c;
+        System.out.print("\nvalue of b + c is: " + f );
+
+        int d = 7;
+        int e = 3;
+        int g = d % e;
+        System.out.print("\nvalue of d % e is: " + g);
+
     }
 }
