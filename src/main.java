@@ -110,12 +110,40 @@ public class main
             System.out.print("\n");
         }while( x < 20 );
 
-        System.out.println("\nArithmetic examples: \n");
+        System.out.println("\nWhile example: \n");
+        int y = 1;
+        while (y <=10){
+            System.out.println(y);
+            y++;
+        }
+
+        System.out.println("\nWhile example with input. Enter a number:");
+        int y2 = input.nextInt();
+        int y3 = 1;
+        while (y3 <= y2){
+        System.out.print("["+y3+"] ");
+        y3++;
+        }
+
+        System.out.println("\n\nWhile example with sum. Enter a number");
+        int j = input.nextInt();
+        int j2 = 1;
+        int j3 = 0;
+        while ( j2 <= j){
+            System.out.print(j2);
+            if (j2 < j){
+                System.out.print(" + ");
+            }
+            j3 += j2++;
+        }
+        System.out.print(" = "+j3);
+
+        System.out.println("\n\nArithmetic examples:");
         double b = 4.5;
         double c = 5.5;
         double f;
         f = b + c;
-        System.out.println("\nvalue of b + c is: " + f );
+        System.out.println("value of b + c is: " + f );
 
         int d = 7;
         int e = 3;
