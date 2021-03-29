@@ -47,32 +47,52 @@ public class main
 
         // switch case example
         System.out.print("\nSwitch Case Example: \n");
-        System.out.print("How many days is it since last Saturday: ");
+        System.out.print("Enter a number: ");
         int days = input.nextInt();
 
         switch (days)
         {
             case 1:
-                System.out.println("Today must be Sunday");
+                System.out.println("Monday");
                 break;
             case 2:
-                System.out.println("Today must be Monday");
+                System.out.println("Tuesday");
                 break;
             case 3:
-                System.out.println("Today must be Tuesday");
+                System.out.println("Wednesday");
                 break;
             case 4:
-                System.out.println("Today must be Wednesday");
+                System.out.println("Thursday");
                 break;
             case 5:
-                System.out.println("Today must be Thursday");
+                System.out.println("Friday");
                 break;
             case 6:
-                System.out.println("Today must be Friday");
+                System.out.println("Saturday");
                 break;
             case 7:
-                System.out.println("Today must be Saturday");
+                System.out.println("Sunday");
                 break;
+        }
+
+        System.out.print("\nIf else Case Example: \n");
+        System.out.print("Enter a day: ");
+        int days2 = input.nextInt();
+
+        if(days2 == 1) {
+            System.out.println("Monday");
+        } else if (days2 == 2) {
+            System.out.println("Tuesday");
+        } else if (days2 == 3) {
+            System.out.println("Wednesday");
+        } else if (days2 == 4) {
+            System.out.println("Thursday");
+        } else if (days2 == 5) {
+            System.out.println("Friday");
+        } else if (days2 == 6) {
+            System.out.println("Saturday");
+        } else if (days2 == 7) {
+            System.out.println("Sunday");
         }
 
         System.out.print("\nFor loop example: \n");
