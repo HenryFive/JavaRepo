@@ -49,7 +49,6 @@ public class main
         System.out.print("\nSwitch Case Example: \n");
         System.out.print("How many days is it since last Saturday: ");
         int days = input.nextInt();
-        input.close();
 
         switch (days)
         {
@@ -91,16 +90,115 @@ public class main
             System.out.print("\n");
         }while( x < 20 );
 
+        System.out.println("\nArithmetic examples: \n");
         double b = 4.5;
         double c = 5.5;
         double f;
         f = b + c;
-        System.out.print("\nvalue of b + c is: " + f );
+        System.out.println("\nvalue of b + c is: " + f );
 
         int d = 7;
         int e = 3;
         int g = d % e;
-        System.out.print("\nvalue of d % e is: " + g);
+        System.out.println("\nvalue of d % e is: " + g);
 
+        System.out.println("Comparison Examples");
+        System.out.println("\nEnter number H:");
+        int H = input.nextInt();
+
+        System.out.println("Enter number I:");
+        int I = input.nextInt();
+        input.close();
+
+        if(H>I){
+            System.out.println("H is greater than I");
+        }
+        else if(H<I){
+            System.out.println("H is less than I");
+        }
+
+        if(H>=I){
+            System.out.println("H is greater than or equal to I");
+        }
+        else if(H<=I){
+            System.out.println("H is less than or equal to I");
+        }
+
+        if(H==I){
+            System.out.println("H is equal to I");
+        }
+        else if(H!=I){
+            System.out.println("H is not equal to I");
+        }
+
+        System.out.println("Complex Assignment Operation");
+        int complexAssignOperand = 4;
+
+        System.out.println("\nOriginal value is "+complexAssignOperand);
+
+        complexAssignOperand += 5;
+        System.out.println("\ncomplexAssignOperand += 5\n"+complexAssignOperand);
+
+        complexAssignOperand -= 2;
+        System.out.println("complexAssignOperand -= 2\n"+complexAssignOperand);
+
+        complexAssignOperand *= 8;
+        System.out.println("complexAssignOperand *= 8\n"+complexAssignOperand);
+
+        complexAssignOperand /= 5;
+        System.out.println("complexAssignOperand /= 5\n"+complexAssignOperand);
+
+        complexAssignOperand %= 5;
+        System.out.println("complexAssignOperand %= 5\n"+complexAssignOperand);
+
+        System.out.println("Increment and Decrement Operators");
+        int numberApples = 7;
+        int numberOranges = 8;
+
+        System.out.println("Apples = "+numberApples);
+        System.out.println("Oranges = "+numberOranges);
+
+        System.out.println("Apples increment= "+(++numberApples));
+
+        System.out.println("Oranges decrement= "+(--numberOranges));
+
+        int incrementOperationA = 5;
+        int incrementOperationB = 5;
+
+        int incrementOperationC = incrementOperationA * ++incrementOperationB;
+        System.out.println(incrementOperationC);
+        int incrementOperationD = incrementOperationA * --incrementOperationB;
+        System.out.println(incrementOperationD);
+
+        byte b2 = 127;
+        b2 %= 7;
+        System.out.println(b2);
+        byte b3 = 120;
+        b3 &= 40;
+        System.out.println(b3);
+        short s1 = 300;
+        s1 ^= 100;
+        System.out.println(s1);
+        byte b4 = 127;
+        b4 >>=3;
+        System.out.println(b4);
+
+        byte number1 = 5;
+        System.out.println("Widening casting");
+        // byte -> short -> char -> int -> long -> float -> double
+
+        short myShort = 9;
+        double myDouble = myShort;
+
+        System.out.println(myShort);
+        System.out.println(myDouble);
+
+        System.out.println("Narrow casting");
+        double mySecondDouble = 9.78;
+        short mySecondShort = (short) mySecondDouble;
+
+        System.out.println(mySecondDouble);
+        System.out.println(mySecondShort);
     }
+
 }
