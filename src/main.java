@@ -125,6 +125,7 @@ public class main
         y3++;
         }
 
+        // while loop sum practice
         System.out.println("\n\nWhile example with sum. Enter a number");
         int j = input.nextInt();
         int j2 = 1;
@@ -137,6 +138,21 @@ public class main
             j3 += j2++;
         }
         System.out.print(" = "+j3);
+
+        // do while
+
+        System.out.println("\n\nDo While Loop for First n even numbers. Enter a number: ");
+        int k = input.nextInt();
+        int k2 = 1;
+        do{
+            if(k2%2==0) {
+                System.out.print(k2);
+                if(k2/2<k){
+                    System.out.print(", ");
+                }
+            }
+            k2++;
+        } while(k2/2<=k);
 
         System.out.println("\n\nArithmetic examples:");
         double b = 4.5;
