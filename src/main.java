@@ -154,6 +154,21 @@ public class main
             k2++;
         } while(k2/2<=k);
 
+        //Fibonacci
+        System.out.print("\n\nFibonacci. Enter a number: ");
+        int m = input.nextInt();
+        int n=1;
+        int o=0;
+        int p=1;
+        for(int l=1;l<=m;l++){
+            System.out.print(p);
+            p=n+o;
+            if(l<m){System.out.print(", ");}
+            o=n;
+            n=p;
+        }
+
+
         System.out.println("\n\nArithmetic examples:");
         double b = 4.5;
         double c = 5.5;
