@@ -1,10 +1,14 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class main
 {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
+
+        Scanner input = new Scanner(System.in);
+
 /*        //Primitive
         int wholeNumbers = 122;
         long largeDecimalNumbers = -12;
@@ -27,8 +31,6 @@ public class main
         int randomNumber;
         Random random = new Random();
         randomNumber = random.ints(1, (100)).findFirst().getAsInt();
-
-        Scanner input = new Scanner(System.in);
 
         System.out.print("\nIf else example: \n");
         System.out.print("Enter an integer from 1 - 100: ");
@@ -187,7 +189,7 @@ public class main
 
         System.out.println("Enter number I:");
         int I = input.nextInt();
-        input.close();
+
 
         if(H>I){
             System.out.println("H is greater than I");
@@ -279,7 +281,7 @@ public class main
         System.out.println(mySecondDouble);
         System.out.println(mySecondShort);
 
- end hide code */
+
 
         System.out.println("Arrays with foreach");
         int[] arrayNumbers = {10, 3, 5, -20, 0, 23};
@@ -288,6 +290,42 @@ public class main
             sum+=arrayNumber;
         };
         System.out.println("Sum is "+sum);
+
+end hide code */
+        System.out.println("Enter a phrase: ");
+        String str = input.nextLine();
+
+        System.out.print("Number of words are: " + countWords(str) + "\n");
+        System.out.print("Number of vowels are: " + countVowels(str) + "\n");
+
+
+        input.close();
+
+    // end main
     }
+
+    static int countWords(String phrase) {
+        Pattern pattern = Pattern.compile(" ");
+        Matcher matcher = pattern.matcher(phrase);
+
+        int count = 0;
+        while (matcher.find())
+            count++;
+
+        return ++count;
+    }
+
+    static int countVowels(String phrase2) {
+        Pattern pattern = Pattern.compile("[aeiouAEIOU]");
+        Matcher matcher = pattern.matcher(phrase2);
+
+        int count2 = 0;
+        while (matcher.find())
+            count2++;
+
+        return count2;
+    }
+
+
 
 }
