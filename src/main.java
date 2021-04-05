@@ -5,7 +5,7 @@ public class main
 {
     public static void main(String args[])
     {
-        //Primitive
+/*        //Primitive
         int wholeNumbers = 122;
         long largeDecimalNumbers = -12;
         float numberWithDecimalPlaces = 8.3f;
@@ -278,6 +278,16 @@ public class main
 
         System.out.println(mySecondDouble);
         System.out.println(mySecondShort);
+
+ end hide code */
+
+        System.out.println("Arrays with foreach");
+        int[] arrayNumbers = {10, 3, 5, -20, 0, 23};
+        int sum = 0;
+        for(int arrayNumber : arrayNumbers){
+            sum+=arrayNumber;
+        };
+        System.out.println("Sum is "+sum);
     }
 
 }
